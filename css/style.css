@@ -1,0 +1,229 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+}
+*, *::before, *::after {box-sizing: border-box;}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.wrap{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    background: #424242;
+    padding: 75px 0;
+}
+.header .container{
+    max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10% 0 20%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: #FFD366;
+}
+
+.info label{
+    margin-bottom: 7px;
+    margin-top: 23px;
+}
+.info input{
+    border-radius: 10px;
+    border: 2px solid #FFD366;
+    padding: 8px 16px;
+    background-color: #424242;
+    outline: none;
+    color: #fff;
+}
+.info .warn{
+    font-size: 12px;
+    text-align: right;
+    color: #fcc12d;
+}
+.interaction{
+    display: flex;
+    align-items: center;
+}
+
+.interaction .btn{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #424242;
+    background: #FFD366;
+    border : 0px;
+    transition: all 0.5s ease-out;
+}
+.interaction .btn:hover{
+    cursor: pointer;
+    transform:scale(1.1,1.1);
+}
+
+.interaction .status{
+    width: 4em;
+    margin-left: 18px;
+    font-size: 32px;
+}
+
+.footer{
+    background: #FFD366;
+    text-align: center;
+    padding: 18px 0;
+}
+
+.content{
+    padding: 48px 200px 74px;
+    background: rgb(245, 245, 245);
+}
+.content h2{
+    font-size: 24px;
+    color: #424242;
+    text-align: center;
+    margin-bottom: 36px;
+}
+.list li{
+    padding: 21px 11px;
+    background: #fff;
+    margin-bottom: 16px;
+    border-left: 7px solid #000;
+    display:flex;
+    justify-content: space-between;
+}
+.list .bmi0{
+    border-color: #31BAF9;
+}
+.list .bmi1{
+    border-color: #86D73F;
+}
+.list .bmi2{
+    border-color: #FF982D;
+}
+.list .bmi3 , .list .bmi4{
+    border-color: #FF6C03;
+}
+.list .bmi5{
+    border-color: #FF1200;
+}
+.list .status{
+    width: 4em;
+}
+.list span{
+    font-size: 12px;
+}
+
+.delLog{
+    width: 5em;
+    margin: 0 auto;
+    color: #000;
+}
+.delLog:hover{
+    color: #FFD366;
+}
+
+.fa-times{
+    color: red;
+    font-size: 16px;
+    transition: all 0.1s ease-out;
+}
+.fa-times:hover{
+    transform:scale(1.6,1.6);
+}
+
+.rebutton{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    border: 7px solid;
+}
+.rebutton .text{
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.rebutton .text span{
+    font-size: 14px;
+}
+
+.fa-sync-alt{
+    position:absolute;
+    font-size: 20px;
+    right:  -5px;
+    bottom: -5px;
+    border: 5px solid #424242;
+    color: #424242;
+    border-radius: 50%;
+    background: green;
+    padding: 5px;
+}
+.fa-spin-hover:hover {
+    animation: fa-spin 0.5s ease-in-out;
+    cursor: pointer;
+    /*https://stackoverflow.com/questions/34378940/rotating-a-font-awesome-icon-on-hover*/
+}

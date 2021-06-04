@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="container">
+                <img src="image/assets/BMICLogo.png" alt="LOGO">
+                <div class="info">
+                    <label for="height">身高 cm</label>
+                    <input type="number" id="height" placeholder="請輸入身高" min="1" class="inheight">
+                    <span class="warn w-height" style="visibility: hidden;">請填入正確的值</span>
+                    <label for="weight">體重 kg</label>
+                    <input type="number" id="weight" placeholder="請輸入體重" min="1" class="inweight">
+                    <span class="warn w-weight" style="visibility: hidden;">請填入正確的值</span>
+                </div>
+                <div class="interaction">
+                    <input type="button" value="結果" class="btn" style="display: block;">
+                    <div class="rebutton" style="display: none;">
+                        <div class="text">
+                            <p class="bmi">20.3</p>
+                            <span>BMI</span>
+                        </div>
+                        <i class="fas fa-sync-alt fa-2x fa-spin-hover"></i>
+                    </div>
+                    <p class="status" style="visibility: hidden;">理想</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h2>BMI 紀錄</h2>
+            <ul class="list">
+                <li class="bmi0">
+                    <div class="status">理想</div>
+                    <div class="bmi"><span>BMI</span> 20.29</div>
+                    <div class="wg"><span>weight</span> 70kg</div>
+                    <div class="ht"><span>height</span> 174cm</div>
+                    <div class="dt"><span>2012-12-21</span></div>
+                    <i class="fas fa-minus-circle"></i>
+                </li>
+                <li class="bmi1">
+                    <div class="status">過度肥胖</div>
+                    <div class="bmi"><span>BMI</span> 20.29</div>
+                    <div class="wg"><span>weight</span> 70kg</div>
+                    <div class="ht"><span>height</span> 174cm</div>
+                    <div class="dt"><span>2012-12-21</span></div>
+                    <i class="fas fa-minus-circle"></i>
+                </li>
+            </ul>
+            <a href="#" class="delLog"><i class="fas fa-trash-alt">清除紀錄</i></a>
+        </div>
+        <div class="footer">
+            <img src="https://i.imgur.com/L7O4LGs.png" alt="logo-footer">
+        </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+</html>
